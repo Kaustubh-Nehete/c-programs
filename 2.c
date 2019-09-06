@@ -3,15 +3,13 @@
 
 int main()
 {
-	int marks;
-	printf("Enter marks out of 100: ");
-	scanf("%d",&marks);
-	if(marks>=75)
-	printf("Grade A\n");
-	else if(marks>=55)
-	printf("Grade B\n");
-	else if(marks>=35)
-	printf("Grade c\n");
-	else
-	printf("Fail\n");
+int num,i;
+printf("Enter a number for factorial: ");
+scanf(" %d",&num);
+for(i=1;i<num;i++)
+{
+num=num*(num-i);
+}
+printf("The factorial is: %d", num);
+
 }

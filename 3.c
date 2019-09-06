@@ -3,13 +3,19 @@
 
 int main()
 {
-	int num;
-	printf("Enter a number: ");
-	scanf("%d",&num);
-	if(num%3==0 && num%7==0)
-	printf("Three-Seven\n");
-	else if(num%7==0)
-	printf("Seven\n");
-	else if(num%3==0)
-	printf("Three\n");
+int num,i,j=0,k=0,l=0;
+printf("Enter 10 numbers: ");
+for(i=1;i<=10;i++)
+{
+scanf("%d",&num);
+if(num<0)
+j++;
+else if(num>0)
+k++;
+else if(num==0)
+l++;
+}
+printf("Positive numbers: %d/n", k);
+printf("Negative numbers: %d/n", j);
+printf("Zeros: %d/n", l);
 }
